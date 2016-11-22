@@ -37,11 +37,16 @@ USMT provides the following benefits to businesses that are deploying Windows op
 ## Limitations
 USMT is intended for administrators who are performing large-scale automated deployments. If you are only migrating the user states of a few computers, you can use [Windows Easy Transfer](https://go.microsoft.com/fwlink/p/?LinkId=140248).
 
+However [Windows Easy Transfer](https://go.microsoft.com/fwlink/p/?LinkId=140248) is deprecated as of Windows 8.1 and does not support Windows 10 at all, as Microsoft assumes that the majority will use the cloud.
+
+
 There are some scenarios in which the use of USMT is not recommended. These include:
 
 -   Migrations that require end-user interaction.
 
 -   Migrations that require customization on a machine-by-machine basis.
+
+In such Scenarios, for example where you want to migrate by hand from one Pc to another or from one AD- or username to another, there is an easy to use [GUI for USMT](http://usmtgui.com) 
 
 ## Related topics
 - [User State Migration Tool (USMT) Technical Reference](usmt-technical-reference.md)
