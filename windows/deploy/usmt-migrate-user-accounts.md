@@ -43,6 +43,7 @@ By default, all users are migrated. The only way to specify which users to inclu
 
         **Note**  
         You do not have to specify the **/lae** option, which enables the account that was created with the **/lac** option. Instead, you can create a disabled local account by specifying only the **/lac** option, and then a local administrator needs to enable the account on the destination computer.
+        
 
          
 
@@ -71,6 +72,12 @@ By default, all users are migrated. The only way to specify which users to inclu
 3.  Specify the following:
 
     `loadstate \\server\share\migration\mystore /mu:contoso\user1:fabrikam\user2 /i:migdocs.xml /i:migapp.xml`
+
+
+## Copying Encrypted files
+add "/efs:copyraw" to the Scanstate command to get encrypted files copied as is. USMT will move certificates.
+Add "/efs:decryptcopy" to the Scanstate command to have encrypted files decrypted prior to being copied..
+
 
 ## Related topics
 
